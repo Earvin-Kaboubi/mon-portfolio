@@ -1,8 +1,4 @@
-/* =====================================================
-   PORTFOLIO BTS SIO SLAM — style.css
-   Palette : #2c3e50 | #e74c3c | #ecf0f1 | #ffffff
-   Noms de classes et IDs entièrement en français
-   ===================================================== */
+
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -83,9 +79,7 @@ img { max-width: 100%; display: block; }
   margin: 12px auto 0;
 }
 
-/* =====================================================
-   BARRE DE NAVIGATION
-   ===================================================== */
+/* BARRE DE NAVIGATION */
 .barre-navig {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -174,9 +168,7 @@ img { max-width: 100%; display: block; }
 .menu-burger.ouvert span:nth-child(2) { opacity: 0; }
 .menu-burger.ouvert span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* =====================================================
-   SECTION HERO
-   ===================================================== */
+/* SECTION HERO */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -221,9 +213,7 @@ img { max-width: 100%; display: block; }
 }
 @keyframes pulsationDefilement { 0%,100%{opacity:.3} 50%{opacity:1} }
 
-/* =====================================================
-   SECTION CV
-   ===================================================== */
+/* SECTION CV */
 .section-cv { padding: 100px 0; background: var(--clair); }
 .grille-cv { display: grid; grid-template-columns: 1fr 380px; gap: 40px; align-items: start; }
 .bloc-cv { background: var(--blanc); border-radius: var(--rayon); padding: 28px; margin-bottom: 24px; box-shadow: var(--ombre); }
@@ -294,9 +284,7 @@ img { max-width: 100%; display: block; }
 .etoile { font-size: 1rem; color: var(--clair); transition: color var(--transition); }
 .etoile.remplie { color: var(--accent); }
 
-/* =====================================================
-   SECTION INFORMATIONS
-   ===================================================== */
+/* SECTION INFORMATIONS */
 .section-info { padding: 100px 0; background: var(--blanc); }
 .grille-info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .carte-info {
@@ -322,9 +310,7 @@ img { max-width: 100%; display: block; }
 .bouton-contour--blanc { border-color: rgba(255,255,255,.4); color: var(--blanc); }
 .bouton-contour--blanc:hover { background: var(--accent); border-color: var(--accent); }
 
-/* =====================================================
-   SECTION CONTACT
-   ===================================================== */
+/* SECTION CONTACT */
 .section-contact { padding: 100px 0; background: var(--sombre); }
 .section-contact .titre-section { color: var(--blanc); }
 .intro-contact { text-align: center; color: rgba(255,255,255,.65); margin-bottom: 48px; font-size: 1rem; }
@@ -341,24 +327,18 @@ img { max-width: 100%; display: block; }
 .carte-contact small { font-size: .76rem; color: rgba(255,255,255,.65); text-align: center; }
 .carte-contact:hover small { color: rgba(255,255,255,.85); }
 
-/* =====================================================
-   PIED DE PAGE
-   ===================================================== */
+/* PIED DE PAGE */
 .pied-page { background: #1a2636; color: rgba(255,255,255,.45); text-align: center; padding: 24px; font-size: .82rem; }
 .interieur-pied-page { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 .liens-pied-page { display: flex; gap: 20px; }
 .liens-pied-page a { color: rgba(255,255,255,.4); font-size: .82rem; transition: color var(--transition); }
 .liens-pied-page a:hover { color: var(--blanc); }
 
-/* =====================================================
-   ANIMATIONS D'APPARITION AU SCROLL
-   ===================================================== */
+/* ANIMATIONS D'APPARITION AU SCROLL */
 .apparition { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
 .apparition.visible { opacity: 1; transform: translateY(0); }
 
-/* =====================================================
-   STYLES DES PAGES INTERNES
-   ===================================================== */
+/*  STYLES DES PAGES INTERNES */
 
 /* Bannière de page interne */
 .hero-page {
@@ -528,9 +508,7 @@ img { max-width: 100%; display: block; }
 .bouton-social.linkedin { background: #0077b5; }
 .bouton-social.github   { background: #333; }
 
-/* =====================================================
-   RESPONSIVE
-   ===================================================== */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .grille-cv { grid-template-columns: 1fr; }
   .cv-droite { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
