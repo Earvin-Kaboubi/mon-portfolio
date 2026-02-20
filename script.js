@@ -1,7 +1,4 @@
-/* =====================================================
-   PORTFOLIO BTS SIO SLAM — script.js
-   Sélecteurs et IDs entièrement en français
-   ===================================================== */
+
 
 document.addEventListener('DOMContentLoaded', () => {
   initialiserBarreNavig();
@@ -13,9 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initialiserLienActif();
 });
 
-/* =====================================================
-   BARRE DE NAVIGATION — effet au défilement
-   ===================================================== */
+/* BARRE DE NAVIGATION — effet au défilement */
 function initialiserBarreNavig() {
   const barreNavig = document.getElementById('barre-navig');
   if (!barreNavig) return;
@@ -32,9 +27,7 @@ function initialiserBarreNavig() {
   auDefilement();
 }
 
-/* =====================================================
-   MENUS DÉROULANTS — bureau & mobile
-   ===================================================== */
+/* MENUS DÉROULANTS — bureau & mobile */
 function initialiserMenusDeroulants() {
   const menusDeroulants = document.querySelectorAll('.menu-deroulant');
 
@@ -59,9 +52,7 @@ function initialiserMenusDeroulants() {
   });
 }
 
-/* =====================================================
-   MENU BURGER — mobile
-   ===================================================== */
+/* MENU BURGER — mobile */
 function initialiserMenuBurger() {
   const menuBurger = document.getElementById('menu-burger');
   const menuNavig  = document.getElementById('menu-navig');
@@ -80,9 +71,7 @@ function initialiserMenuBurger() {
   });
 }
 
-/* =====================================================
-   ANIMATIONS D'APPARITION AU SCROLL
-   ===================================================== */
+/*  ANIMATIONS D'APPARITION AU SCROLL */
 function initialiserApparitions() {
   const elements = document.querySelectorAll('.apparition');
 
@@ -108,9 +97,7 @@ function initialiserApparitions() {
   elements.forEach(el => observateur.observe(el));
 }
 
-/* =====================================================
-   COMPÉTENCES — barres de langue & étoiles
-   ===================================================== */
+/*   COMPÉTENCES — barres de langue & étoiles */
 function initialiserCompetences() {
   /* Barres de langues */
   const barresLangue = document.querySelectorAll('.remplissage-langue');
@@ -147,9 +134,7 @@ function initialiserCompetences() {
   });
 }
 
-/* =====================================================
-   DÉFILEMENT DOUX — ancres internes
-   ===================================================== */
+/*  DÉFILEMENT DOUX — ancres internes */
 function initialiserDefilementDoux() {
   document.querySelectorAll('a[href^="#"]').forEach(lien => {
     lien.addEventListener('click', (e) => {
@@ -169,9 +154,7 @@ function initialiserDefilementDoux() {
   });
 }
 
-/* =====================================================
-   LIEN ACTIF — mise en surbrillance selon la section
-   ===================================================== */
+/* LIEN ACTIF — mise en surbrillance selon la section */
 function initialiserLienActif() {
   const sections  = document.querySelectorAll('section[id]');
   const liensNavig = document.querySelectorAll('.lien-navig:not(.bouton-deroulant)');
