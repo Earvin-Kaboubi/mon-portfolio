@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Me Contacter | Portfolio Earvin KABOUBI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- BARRE DE NAVIGATION -->
+  <nav class="barre-navig defilee" id="barre-navig">
+    <div class="conteneur-navig">
+      <a href="accueil.html" class="logo-navig">Mon<span>Portfolio</span></a>
+      <button class="menu-burger" id="menu-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu-navig" id="menu-navig">
+        <li><a href="accueil.html" class="lien-navig">Accueil</a></li>
+        <li><a href="accueil.html#cv" class="lien-navig">CV</a></li>
+        <li class="menu-deroulant">
+          <a href="#" class="lien-navig bouton-deroulant">Réalisations <i class="fas fa-chevron-down"></i></a>
+          <ul class="sous-menu">
+            <li><a href="site-web.html">Site web</a></li>
+            <li><a href="projet-1.html">Projet 1ère année</a></li>
+            <li><a href="projet-2.html">Projet 2ème année</a></li>
+          </ul>
+        </li>
+        <li><a href="veille.html" class="lien-navig">Veille Technologique</a></li>
+        <li><a href="contact.html" class="lien-navig actif">Me contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- BANNIÈRE DE PAGE -->
+  <div class="hero-page">
+    <div class="contenu-hero-page">
+      <span class="badge-hero-page"><i class="fas fa-paper-plane"></i> &nbsp;Contact</span>
+      <h1>Restons en <span>Contact</span></h1>
+      <div class="etiquettes-hero-page">
+        <span class="etiquette"><i class="fas fa-briefcase"></i> Stage</span>
+        <span class="etiquette"><i class="fas fa-handshake"></i> Alternance</span>
+        <span class="etiquette"><i class="fas fa-comments"></i> Collaboration</span>
+      </div>
+    </div>
+    <div class="fil-ariane">
+      <a href="accueil.html">Accueil</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Me contacter</span>
+    </div>
+  </div>
+
+  <!-- FORMULAIRE -->
+  <section class="section-formulaire-contact">
+    <div class="conteneur">
+      <div class="grille-page-contact">
+
+        <!-- Formulaire principal -->
+        <div class="bloc-formulaire-contact apparition">
+          <h2>Envoyer un message</h2>
+          <p>Remplissez le formulaire ci-dessous et je vous répondrai dans les meilleurs délais.</p>
+
+          <form id="formulaire-contact" novalidate>
+            <div class="ligne-formulaire">
+              <div class="groupe-champ">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required/>
+              </div>
+              <div class="groupe-champ">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required/>
+              </div>
+            </div>
+
+            <div class="groupe-champ">
+              <label for="courriel">Email *</label>
+              <input type="email" id="courriel" name="courriel" placeholder="votre@email.com" required/>
+            </div>
+
+            <div class="groupe-champ">
+              <label for="sujet">Sujet *</label>
+              <select id="sujet" name="sujet" required>
+                <option value="" disabled selected>Choisissez un sujet</option>
+                <option value="stage">Proposition de stage</option>
+                <option value="alternance">Proposition d'alternance</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="groupe-champ">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre demande..." required></textarea>
+            </div>
+
+            <button type="submit" class="bouton bouton-principal" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> Envoyer le message
+            </button>
+
+            <div class="succes-formulaire" id="succes-formulaire">
+              <i class="fas fa-check-circle"></i>
+              <span>Message envoyé avec succès ! Je vous répondrai rapidement.</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- Barre latérale -->
+        <div class="barre-laterale-contact apparition">
+
+          <div class="carte-info-contact">
+            <h3><i class="fas fa-address-book"></i> Coordonnées</h3>
+            <div class="element-info-contact">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:earvinkab06@gmail.com">earvinkab06@gmail.com</a>
+            </div>
+            <div class="element-info-contact">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Paris, Gif-Sur-Yvette(91) — France</span>
+            </div>
+            <div class="element-info-contact">
+              <i class="fas fa-graduation-cap"></i>
+              <span>BTS SIO SLAM — Cours Diderot</span>
+            </div>
+          </div>
+
+          <div class="carte-info-contact">
+            <h3><i class="fas fa-share-alt"></i> Réseaux sociaux</h3>
+            <div class="liens-sociaux">
+              <a href="www.linkedin.com/in/earvin-kaboubi-77875432b" target="_blank" class="bouton-social linkedin">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/Earvin-Kaboubi" target="_blank" class="bouton-social github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIED DE PAGE -->
+  <footer class="pied-page">
+    <div class="conteneur">
+      <div class="interieur-pied-page">
+        <span>© 2025 Earvin KABOUBI — Portfolio BTS SIO SLAM</span>
+        <div class="liens-pied-page">
+          <a href="accueil.html">Accueil</a>
+          <a href="veille.html">Veille</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    /* ── Gestion du formulaire de contact ── */
+    document.getElementById('formulaire-contact').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const boutonEnvoi  = this.querySelector('button[type="submit"]');
+      const zoneSucces   = document.getElementById('succes-formulaire');
+      const champsRequis = this.querySelectorAll('[required]');
+
+      /* Validation basique */
+      let valide = true;
+      champsRequis.forEach(champ => {
+        if (!champ.value.trim()) {
+          valide = false;
+          champ.style.borderColor = '#e74c3c';
+          setTimeout(() => champ.style.borderColor = '', 2000);
+        }
+      });
+      if (!valide) return;
+
+      /* Simulation d'envoi */
+      boutonEnvoi.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+      boutonEnvoi.disabled = true;
+
+      setTimeout(() => {
+        boutonEnvoi.innerHTML = '<i class="fas fa-check"></i> Envoyé !';
+        zoneSucces.style.display = 'flex';
+        this.reset();
+        setTimeout(() => {
+          boutonEnvoi.innerHTML = '<i class="fas fa-paper-plane"></i> Envoyer le message';
+          boutonEnvoi.disabled = false;
+          zoneSucces.style.display = 'none';
+        }, 4000);
+      }, 1500);
+    });
+
+    /* Retirer la bordure rouge au focus */
+    document.querySelectorAll('.groupe-champ input, .groupe-champ textarea, .groupe-champ select').forEach(el => {
+      el.addEventListener('focus', () => el.style.borderColor = '');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – Earvin KABOUBI | BTS SIO SLAM</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===================== BARRE DE NAVIGATION ===================== -->
+  <nav class="barre-navig" id="barre-navig">
+    <div class="conteneur-navig">
+      <a href="index.html" class="logo-navig">Mon<span>Portfolio</span></a>
+      <button class="menu-burger" id="menu-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu-navig" id="menu-navig">
+        <li><a href="accueil.html" class="lien-navig actif">Accueil</a></li>
+        <li><a href="#cv" class="lien-navig">CV</a></li>
+
+        <!-- Réalisations -->
+        <li class="menu-deroulant">
+          <a href="#" class="lien-navig bouton-deroulant">Réalisations <i class="fas fa-chevron-down"></i></a>
+          <ul class="sous-menu">
+            <li><a href="site-web.html">Site web</a></li>
+            <li><a href="projet-1.html">Projet 1ère année</a></li>
+            <li><a href="projet-2.html">Projet 2ème année</a></li>
+          </ul>
+        </li>
+
+        <li><a href="veille.html" class="lien-navig">Veille Technologique</a></li>
+        <li><a href="contact.html" class="lien-navig">Me contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="accueil">
+    <div class="fond-hero"></div>
+    <div class="contenu-hero apparition">
+      <div class="avatar-hero">
+        <img src="img/imagemeptf.png" alt="Photo de profil" onerror="this.src='https://i.pravatar.cc/200?img=12'"/>
+      </div>
+      <h1 class="titre-hero">Portfolio d'Earvin KABOUBI<br><span>BTS SIO</span> SLAM</h1>
+      <p class="description-hero">Étudiant en BTS SIO option SLAM, passionné d'informatique, de développement web et d'applications mobiles.</p>
+      <a href="#" class="bouton bouton-principal"><i class="fas fa-map-marker-alt"></i> Cours Diderot</a>
+    </div>
+    <div class="indice-defilement">
+      <span>Scroll</span>
+      <div class="ligne-defilement"></div>
+    </div>
+  </section>
+
+  <!-- ===================== CV ===================== -->
+  <section class="section-cv" id="cv">
+    <div class="conteneur">
+      <h2 class="titre-section apparition">Mon Curriculum Vitæ</h2>
+      <div class="grille-cv">
+
+        <!-- Colonne gauche -->
+        <div class="cv-gauche apparition">
+
+          <div class="bloc-cv">
+            <h3 class="titre-bloc-cv"><i class="fas fa-user"></i> Présentation</h3>
+            <p>Bienvenue sur mon portfolio ! Je m'appelle Earvin KABOUBI, je suis étudiant en deuxième année de BTS Services Informatiques aux Organisations (SIO) en option SLAM au sein de Cours Diderot.<br><br>
+            Passionné par le développement informatique et la cybersécurité, je me forme actuellement aux langages Java, Python, JavaScript, HTML/CSS ainsi qu'à l'administration réseau.<br><br>
+            Mon objectif est de devenir développeur web ou analyste en cybersécurité. Curieux et motivé, j'aime apprendre de nouvelles technologies et mener des projets concrets.</p>
+          </div>
+
+          <!-- Chronologie scolaire -->
+          <div class="bloc-cv">
+            <h3 class="titre-bloc-cv"><i class="fas fa-graduation-cap"></i> Parcours scolaire</h3>
+            <div class="chronologie">
+              <div class="element-chronologie">
+                <div class="point-chronologie"></div>
+                <div class="contenu-chronologie">
+                  <span class="annee-chronologie">2025</span>
+                  <h4>BTS SIO option SLAM</h4>
+                  <p>Solutions Logicielles et Applications Métiers — Cours Diderot</p>
+                </div>
+              </div>
+              <div class="element-chronologie">
+                <div class="point-chronologie"></div>
+                <div class="contenu-chronologie">
+                  <span class="annee-chronologie">2024</span>
+                  <h4>Baccalauréat</h4>
+                  <p>Spécialité Scientifique — Lycée Monseigneur Jean-Rémy Bessieux</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expériences -->
+          <div class="bloc-cv">
+            <h3 class="titre-bloc-cv"><i class="fas fa-briefcase"></i> Expériences professionnelles</h3>
+            <div class="element-experience">
+              <div class="entete-experience">
+                <h4>Stage technicien informatique</h4>
+                <span class="badge-experience">Stage</span>
+              </div>
+              <p class="entreprise-experience"><i class="fas fa-building"></i> ALP GLOBAL CONSEIL — Montpellier</p>
+              <p>Maintenance du parc informatique, assistance utilisateurs, configuration de postes et réseau.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="cv-droite apparition">
+
+          <div class="bloc-cv">
+            <h3 class="titre-bloc-cv"><i class="fas fa-address-card"></i> Contact</h3>
+            <ul class="liste-contact">
+              <li><a href="mailto:earvinkab06@gmail.com"><i class="fas fa-envelope"></i> earvinkab06@gmail.com</a></li>
+              <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="https://github.com/Earvin-Kaboubi" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="bloc-cv">
+            <h3 class="titre-bloc-cv"><i class="fas fa-language"></i> Langues</h3>
+            <div class="element-langue">
+              <div class="entete-langue"><span>🇫🇷 Français</span><span class="niveau-langue">Natif</span></div>
+              <div class="barre-langue"><div class="remplissage-langue" data-largeur="100"></div></div>
+            </div>
+            <div class="element-langue">
+              <div class="entete-langue"><span>🇬🇧 Anglais</span><span class="niveau-langue">A2</span></div>
+              <div class="barre-langue"><div class="remplissage-langue" data-largeur="40"></div></div>
+            </div>
+          </div>
+
+          <div class="bloc-cv">
+            <h3 class="titre-bloc-cv"><i class="fas fa-code"></i> Compétences</h3>
+            <div class="element-competence">
+              <div class="entete-competence"><span>SQL</span><div class="etoiles" data-etoiles="3"></div></div>
+            </div>
+            <div class="element-competence">
+              <div class="entete-competence"><span>Java</span><div class="etoiles" data-etoiles="2"></div></div>
+            </div>
+            <div class="element-competence">
+              <div class="entete-competence"><span>HTML / CSS</span><div class="etoiles" data-etoiles="5"></div></div>
+            </div>
+            <div class="element-competence">
+              <div class="entete-competence"><span>JavaScript</span><div class="etoiles" data-etoiles="3"></div></div>
+            </div>
+            <div class="element-competence">
+              <div class="entete-competence"><span>PHP</span><div class="etoiles" data-etoiles="3"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RÉALISATIONS ===================== -->
+  <section class="section-info" id="realisations">
+    <div class="conteneur">
+      <h2 class="titre-section apparition">Mes Réalisations</h2>
+      <div class="grille-info">
+        <div class="carte-info apparition">
+          <div class="icone-info"><i class="fas fa-globe"></i></div>
+          <h3>Site Web</h3>
+          <p>Conception et développement d'un site web complet avec HTML, CSS et JavaScript. Interface responsive et moderne.</p>
+          <a href="site-web.html" class="bouton bouton-contour">Voir le projet</a>
+        </div>
+        <div class="carte-info apparition">
+          <div class="icone-info"><i class="fas fa-laptop-code"></i></div>
+          <h3>Projet 1ère Année</h3>
+          <p>Premier projet réalisé en BTS SIO SLAM. Développement d'une application de gestion avec base de données Java/MySQL.</p>
+          <a href="projet-1.html" class="bouton bouton-contour">Voir le projet</a>
+        </div>
+        <div class="carte-info apparition">
+          <div class="icone-info"><i class="fas fa-code-branch"></i></div>
+          <h3>Projet 2ème Année</h3>
+          <p>Projet de fin de BTS, application web complète développée avec PHP, API REST et méthode agile.</p>
+          <a href="projet-2.html" class="bouton bouton-contour">Voir le projet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INFORMATIONS ===================== -->
+  <section class="section-info section-info--sombre" id="info">
+    <div class="conteneur">
+      <h2 class="titre-section titre-section--blanc apparition">Informations</h2>
+      <div class="grille-info">
+        <div class="carte-info carte-info--sombre apparition">
+          <div class="icone-info"><i class="fas fa-school"></i></div>
+          <h3>Étudiant au Lycée</h3>
+          <p>Actuellement en formation BTS SIO au Cours Diderot, dans un environnement propice à l'apprentissage des technologies informatiques modernes.</p>
+          <a href="#" class="bouton bouton-contour bouton-contour--blanc">En savoir plus</a>
+        </div>
+        <div class="carte-info carte-info--sombre apparition">
+          <div class="icone-info"><i class="fas fa-terminal"></i></div>
+          <h3>Option SLAM</h3>
+          <p>Solutions Logicielles et Applications Métiers — spécialisation dans la conception, le développement et la maintenance de solutions applicatives.</p>
+          <a href="veille.html" class="bouton bouton-contour bouton-contour--blanc">Veille techno</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section-contact" id="contact">
+    <div class="conteneur">
+      <h2 class="titre-section apparition">Me Contacter</h2>
+      <p class="intro-contact apparition">N'hésitez pas à me contacter pour toute opportunité de stage, d'alternance.</p>
+      <div class="cartes-contact apparition">
+        <a href="mailto:earvinkab06@gmail.com" class="carte-contact">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+          <small>earvinkab06@gmail.com</small>
+        </a>
+        <a href="www.linkedin.com/in/earvin-kaboubi-77875432b" target="_blank" class="carte-contact">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+          <small>Voir le profil</small>
+        </a>
+        <a href="https://github.com/Earvin-Kaboubi" target="_blank" class="carte-contact">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+          <small>Voir les projets</small>
+        </a>
+      </div>
+      <div style="text-align:center; margin-top: 40px;" class="apparition">
+        <a href="contact.html" class="bouton bouton-principal"><i class="fas fa-paper-plane"></i> Formulaire de contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PIED DE PAGE ===================== -->
+  <footer class="pied-page">
+    <div class="conteneur">
+      <div class="interieur-pied-page">
+        <span>© 2025 Earvin KABOUBI — Portfolio BTS SIO SLAM</span>
+        <div class="liens-pied-page">
+          <a href="accueil.html">Accueil</a>
+          <a href="veille.html">Veille</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

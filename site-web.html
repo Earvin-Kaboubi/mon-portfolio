@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Web – Réalisations | Portfolio Earvin KABOUBI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- BARRE DE NAVIGATION -->
+  <nav class="barre-navig defilee" id="barre-navig">
+    <div class="conteneur-navig">
+      <a href="accueil.html" class="logo-navig">Mon<span>Portfolio</span></a>
+      <button class="menu-burger" id="menu-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu-navig" id="menu-navig">
+        <li><a href="accueil.html" class="lien-navig">Accueil</a></li>
+        <li><a href="accueil.html#cv" class="lien-navig">CV</a></li>
+        <li class="menu-deroulant">
+          <a href="#" class="lien-navig bouton-deroulant actif">Réalisations <i class="fas fa-chevron-down"></i></a>
+          <ul class="sous-menu">
+            <li><a href="site-web.html" style="color:var(--accent)">Site web</a></li>
+            <li><a href="projet-1.html">Projet 1ère année</a></li>
+            <li><a href="projet-2.html">Projet 2ème année</a></li>
+          </ul>
+        </li>
+        <li><a href="veille.html" class="lien-navig">Veille Technologique</a></li>
+        <li><a href="contact.html" class="lien-navig">Me contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- BANNIÈRE DE PAGE -->
+  <div class="hero-page">
+    <div class="contenu-hero-page">
+      <span class="badge-hero-page"><i class="fas fa-globe"></i> &nbsp;Réalisation</span>
+      <h1>Site <span>Web</span></h1>
+      <p>Conception et développement d'un site web complet et responsive, réalisé dans le cadre du BTS SIO option SLAM.</p>
+      <div class="etiquettes-hero-page">
+        <span class="etiquette">HTML5</span>
+        <span class="etiquette">CSS3</span>
+        <span class="etiquette">JavaScript</span>
+        <span class="etiquette">MySQL</span>
+      </div>
+    </div>
+    <div class="fil-ariane">
+      <a href="accueil.html">Accueil</a>
+      <i class="fas fa-chevron-right"></i>
+      <a href="accueil.html#realisations">Réalisations</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Site Web</span>
+    </div>
+  </div>
+
+  <!-- CONTENU -->
+  <section class="contenu-page">
+    <div class="conteneur">
+
+      <!-- Aperçu -->
+      <div class="apercu-projet apparition">
+        <div class="bloc-description-projet">
+          <h2>Présentation du projet</h2>
+          <p>Dans le cadre de ma formation en BTS SIO option SLAM, j'ai réalisé un site web dynamique complet. Ce projet m'a permis de mettre en pratique l'ensemble des compétences acquises en développement front-end et back-end.</p>
+          <p>Le site propose une interface moderne et responsive, adaptée à tous types d'écrans. Il inclut une base de données MySQL gérée via PHP pour la persistance des données, ainsi qu'un espace d'administration sécurisé.</p>
+          <p>Les fonctionnalités principales incluent un système d'authentification, une gestion de contenu dynamique, et un formulaire de contact fonctionnel avec validation côté client et serveur.</p>
+          <div style="margin-top: 24px;">
+          </div>
+        </div>
+
+        <div class="meta-projet">
+          <div class="carte-meta">
+            <h4>Technologies</h4>
+            <div>
+              <span class="etiquette-meta">HTML5</span>
+              <span class="etiquette-meta">CSS3</span>
+              <span class="etiquette-meta">JavaScript</span>
+              <span class="etiquette-meta">PHP </span>
+              <span class="etiquette-meta">MySQL</span>
+            </div>
+          </div>
+          <div class="carte-meta">
+            <h4>Détails</h4>
+            <ul class="liste-meta">
+              <li><i class="fas fa-calendar"></i> Année 2024–2025</li>
+              <li><i class="fas fa-clock"></i> ~4 semaines</li>
+              <li><i class="fas fa-user"></i> Projet individuel</li>
+              <li><i class="fas fa-graduation-cap"></i> BTS SIO SLAM</li>
+            </ul>
+          </div>
+          <div class="carte-meta">
+            <h4>Compétences mobilisées</h4>
+            <ul class="liste-meta">
+              <li><i class="fas fa-check"></i> Développement front-end</li>
+              <li><i class="fas fa-check"></i> Back-end PHP</li>
+              <li><i class="fas fa-check"></i> Base de données SQL</li>
+              <li><i class="fas fa-check"></i> Sécurité web</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Étapes -->
+      <h2 class="titre-section apparition">Étapes du projet</h2>
+      <div class="etapes-processus">
+        <div class="carte-etape apparition">
+          <div class="numero-etape">1</div>
+          <h4>Analyse & Conception</h4>
+          <p>Recueil des besoins, rédaction du cahier des charges, maquettage des interfaces avec Figma.</p>
+        </div>
+        <div class="carte-etape apparition">
+          <div class="numero-etape">2</div>
+          <h4>Développement Front-end</h4>
+          <p>Intégration HTML/CSS responsive, animations JavaScript, respect des standards W3C.</p>
+        </div>
+        <div class="carte-etape apparition">
+          <div class="numero-etape">3</div>
+          <h4>Développement Back-end</h4>
+          <p>Création de la base de données, développement PHP, sécurisation des accès et des formulaires.</p>
+        </div>
+      </div>
+
+
+
+      <!-- Bloc action -->
+      <div class="bloc-action apparition">
+        <h3>Intéressé par ce projet ?</h3>
+        <p>N'hésitez pas à me contacter pour plus d'informations</p>
+        <div class="groupe-boutons">
+          <a href="contact.html" class="bouton bouton-principal"><i class="fas fa-paper-plane"></i> Me contacter</a>
+          <a href="https://github.com/Earvin-Kaboubi" target="_blank" class="bouton bouton-blanc"><i class="fab fa-github"></i> GitHub</a>
+          <a href="accueil.html#realisations" class="bouton" style="border:2px solid rgba(255,255,255,.3);color:#fff;"><i class="fas fa-arrow-left"></i> Retour</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIED DE PAGE -->
+  <footer class="pied-page">
+    <div class="conteneur">
+      <div class="interieur-pied-page">
+        <span>© 2025 Earvin KABOUBI — Portfolio BTS SIO SLAM</span>
+        <div class="liens-pied-page">
+          <a href="accueil.html">Accueil</a>
+          <a href="veille.html">Veille</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

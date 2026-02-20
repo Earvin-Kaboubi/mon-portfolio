@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet 2ème Année – Réalisations | Portfolio Earvin KABOUBI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- BARRE DE NAVIGATION -->
+  <nav class="barre-navig defilee" id="barre-navig">
+    <div class="conteneur-navig">
+      <a href="accueil.html" class="logo-navig">Mon<span>Portfolio</span></a>
+      <button class="menu-burger" id="menu-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu-navig" id="menu-navig">
+        <li><a href="accueil.html" class="lien-navig">Accueil</a></li>
+        <li><a href="accueil.html#cv" class="lien-navig">CV</a></li>
+        <li class="menu-deroulant">
+          <a href="#" class="lien-navig bouton-deroulant actif">Réalisations <i class="fas fa-chevron-down"></i></a>
+          <ul class="sous-menu">
+            <li><a href="site-web.html">Site web</a></li>
+            <li><a href="projet-1.html">Projet 1ère année</a></li>
+            <li><a href="projet-2.html" style="color:var(--accent)">Projet 2ème année</a></li>
+          </ul>
+        </li>
+        <li><a href="veille.html" class="lien-navig">Veille Technologique</a></li>
+        <li><a href="contact.html" class="lien-navig">Me contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- BANNIÈRE DE PAGE -->
+  <div class="hero-page">
+    <div class="contenu-hero-page">
+      <span class="badge-hero-page"><i class="fas fa-code-branch"></i> &nbsp;Réalisation</span>
+      <h1>Projet <span>2ème Année</span></h1>
+      <p>Application web complète développée en deuxième année de BTS SIO SLAM, intégrant les meilleures pratiques du développement moderne.</p>
+      <div class="etiquettes-hero-page">
+        <span class="etiquette">PHP</span>
+        <span class="etiquette">JavaScript</span>
+        <span class="etiquette">MySQL</span>
+        <span class="etiquette">REST API</span>
+        <span class="etiquette">Bootstrap</span>
+      </div>
+    </div>
+    <div class="fil-ariane">
+      <a href="accueil.html">Accueil</a>
+      <i class="fas fa-chevron-right"></i>
+      <a href="accueil.html#realisations">Réalisations</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Projet 2ème Année</span>
+    </div>
+  </div>
+
+  <!-- CONTENU -->
+  <section class="contenu-page">
+    <div class="conteneur">
+
+      <div class="apercu-projet apparition">
+        <div class="bloc-description-projet">
+          <h2>Présentation du projet</h2>
+          <p>En deuxième année de BTS SIO SLAM, j'ai réalisé une application web complète en PHP avec une architecture MVC structurée. Ce projet représente l'aboutissement de ma formation et mobilise l'ensemble des compétences acquises.</p>
+          <p>L'application propose une gestion complète avec authentification, rôles utilisateurs, tableaux de bord dynamiques et une API REST pour communiquer avec des services externes. L'interface front-end utilise JavaScript moderne (Fetch API, DOM dynamique).</p>
+          <p>Le projet a été développé en suivant une méthodologie agile avec des sprints hebdomadaires, ce qui m'a permis d'itérer rapidement et de livrer un produit fonctionnel à chaque étape.</p>
+        </div>
+
+        <div class="meta-projet">
+          <div class="carte-meta">
+            <h4>Technologies</h4>
+            <div>
+              <span class="etiquette-meta">PHP 8</span>
+              <span class="etiquette-meta">JavaScript</span>
+              <span class="etiquette-meta">MySQL</span>
+              <span class="etiquette-meta">REST API</span>
+              <span class="etiquette-meta">Bootstrap</span>
+              <span class="etiquette-meta">Git</span>
+            </div>
+          </div>
+          <div class="carte-meta">
+            <h4>Détails</h4>
+            <ul class="liste-meta">
+              <li><i class="fas fa-calendar"></i> Année 2025–2026</li>
+              <li><i class="fas fa-clock"></i> ~6 semaines</li>
+              <li><i class="fas fa-users"></i> Projet en binôme</li>
+              <li><i class="fas fa-graduation-cap"></i> 2ème année BTS SIO</li>
+            </ul>
+          </div>
+          <div class="carte-meta">
+            <h4>Compétences mobilisées</h4>
+            <ul class="liste-meta">
+              <li><i class="fas fa-check"></i> Architecture MVC</li>
+              <li><i class="fas fa-check"></i> API REST</li>
+              <li><i class="fas fa-check"></i> Sécurité & authentification</li>
+              <li><i class="fas fa-check"></i> Gestion de version Git</li>
+              <li><i class="fas fa-check"></i> Méthode Agile</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Étapes -->
+      <h2 class="titre-section apparition">Fonctionnalités principales</h2>
+      <div class="etapes-processus">
+        <div class="carte-etape apparition">
+          <div class="numero-etape"><i class="fas fa-lock" style="font-size:.9rem"></i></div>
+          <h4>Authentification</h4>
+          <p>Système de connexion sécurisé avec gestion des sessions, hachage des mots de passe et rôles utilisateurs.</p>
+        </div>
+        <div class="carte-etape apparition">
+          <div class="numero-etape"><i class="fas fa-database" style="font-size:.9rem"></i></div>
+          <h4>CRUD Complet</h4>
+          <p>Gestion complète des données avec validation des formulaires, gestion des erreurs et retours utilisateur.</p>
+        </div>
+        <div class="carte-etape apparition">
+          <div class="numero-etape"><i class="fas fa-plug" style="font-size:.9rem"></i></div>
+          <h4>API REST</h4>
+          <p>Endpoints PHP pour exposer les données en JSON, consommés depuis le front-end via JavaScript Fetch API.</p>
+        </div>
+      </div>
+      <!-- Bilan -->
+      <div class="bloc-description-projet apparition" style="margin-bottom: 40px;">
+        <h2>Bilan du projet</h2>
+        <p>Ce projet de deuxième année m'a permis de consolider mes compétences en développement full-stack et d'acquérir de nouvelles pratiques professionnelles : architecture MVC, travail en équipe avec Git, conception d'API REST.</p>
+        <p>La rigueur apportée à la sécurité (protection XSS, injections SQL, gestion des sessions) reflète les bonnes pratiques enseignées en BTS SIO. Ce projet constitue la base de mes compétences pour intégrer le monde professionnel.</p>
+      </div>
+
+      <!-- Bloc action -->
+      <div class="bloc-action apparition">
+        <h3>Intéressé par ce projet ?</h3>
+        <p>Contactez-moi pour en discuter ou consultez mon GitHub pour accéder au code source.</p>
+        <div class="groupe-boutons">
+          <a href="contact.html" class="bouton bouton-principal"><i class="fas fa-paper-plane"></i> Me contacter</a>
+          <a href="https://github.com/Earvin-Kaboubi" target="_blank" class="bouton bouton-blanc"><i class="fab fa-github"></i> GitHub</a>
+          <a href="projet-1.html" class="bouton" style="border:2px solid rgba(255,255,255,.3);color:#fff;"><i class="fas fa-arrow-left"></i> Projet 1ère année</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIED DE PAGE -->
+  <footer class="pied-page">
+    <div class="conteneur">
+      <div class="interieur-pied-page">
+        <span>© 2025 Earvin KABOUBI — Portfolio BTS SIO SLAM</span>
+        <div class="liens-pied-page">
+          <a href="accueil.html">Accueil</a>
+          <a href="veille.html">Veille</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

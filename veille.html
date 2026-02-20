@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veille Technologique | Portfolio Earvin KABOUBI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- BARRE DE NAVIGATION -->
+  <nav class="barre-navig defilee" id="barre-navig">
+    <div class="conteneur-navig">
+      <a href="accueil.html" class="logo-navig">Mon<span>Portfolio</span></a>
+      <button class="menu-burger" id="menu-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu-navig" id="menu-navig">
+        <li><a href="accueil.html" class="lien-navig">Accueil</a></li>
+        <li><a href="accueil.html#cv" class="lien-navig">CV</a></li>
+        <li class="menu-deroulant">
+          <a href="#" class="lien-navig bouton-deroulant">Réalisations <i class="fas fa-chevron-down"></i></a>
+          <ul class="sous-menu">
+            <li><a href="site-web.html">Site web</a></li>
+            <li><a href="projet-1.html">Projet 1ère année</a></li>
+            <li><a href="projet-2.html">Projet 2ème année</a></li>
+          </ul>
+        </li>
+        <li><a href="veille.html" class="lien-navig actif">Veille Technologique</a></li>
+        <li><a href="contact.html" class="lien-navig">Me contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- BANNIÈRE DE PAGE -->
+  <div class="hero-page">
+    <div class="contenu-hero-page">
+      <span class="badge-hero-page"><i class="fas fa-search"></i> &nbsp;Veille Technologique</span>
+      <h1>L'authentification<br>sans <span> mot de passe (passkey)</span></h1>
+    </div>
+    <div class="fil-ariane">
+      <a href="accueil.html">Accueil</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Veille Technologique</span>
+    </div>
+  </div>
+
+  <!-- CONTENU -->
+  <section class="contenu-page fond-clair">
+    <div class="conteneur">
+
+      <!-- Introduction -->
+      <div class="bloc-description-projet apparition" style="margin-bottom: 48px;">
+      <p> En termes simples, un passkey est une clé cryptographique conçue pour remplacer les mots de passe.
+          Comme les anciens mots de passe pouvaient facilement être volés, piratés ou même devinés, les passkeys fonctionneraient à un niveau complètement différent, avec l'authentification par paires de clés publique-privée.<br>
+          Contrairement à un mot de passe, les passkeys ne peuvent pas être partagés, mémorisés ou écrits. Ils sont donc beaucoup moins vulnérables aux types d'attaques qui visent généralement les systèmes basés sur des mots de passe.<br><br>
+          <br>Ce sujet m’intéresse particulièrement car l’IA générative, comme ChatGPT ou d’autres outils similaires, joue un rôle de plus en plus important en informatique. Elle est utilisée pour détecter des menaces, automatiser des défenses, et analyser des comportements suspects afin de renforcer la cybersécurité.
+          À travers cette veille, je souhaite comprendre comment l’intelligence artificielle peut aider à protéger les systèmes informatiques, quels sont ses bénéfices, mais aussi les risques liés à son utilisation dans ce domaine.
+          Les points importants.<br>
+
+      </p>
+      </div>
+
+      <!-- Articles -->
+      <div class="grille-veille">
+
+        <div class="carte-veille apparition">
+          <div class="entete-carte-veille">
+            <div class="icone-carte-veille"><i class="fas fa-robot"></i></div>
+            <div>
+              <h3>Fonctionnement des passKeys</h3>
+            </div>
+          </div>
+            <p>Les Passkeys reposent sur la cryptographie asymétrique : lors de la création d'un compte, votre appareil génère une clé publique (transmise au serveur) et une clé privée (stockée localement dans une puce sécurisée isolée comme le TPM ou la Secure Enclave). Lors de la connexion, le serveur envoie un défi que votre appareil "signe" instantanément grâce à votre biométrie, sans jamais révéler votre secret. Cette signature étant unique, temporaire et liée au domaine du site, elle rend le phishing et le vol de données inefficaces, tout en restant synchronisée entre vos appareils via le Cloud pour une expérience fluide et sans mot de passe.</p>
+
+        </div>
+
+        <div class="carte-veille apparition">
+          <div class="entete-carte-veille">
+            <div class="icone-carte-veille"><i class="fas fa-brain"></i></div>
+            <div>
+              <h3>Technologies et Standards utilisés</h3>
+            </div>
+          </div>
+          <p> Les passkeys reposent sur plusieurs standards reconnus :
+              FIDO2 : standard d’authentification sans mot de passe
+              WebAuthn : API web permettant l’utilisation des passkeys dans les navigateurs
+              CTAP : protocole de communication avec les authentificateurs (clés physiques, smartphones)
+              Ces standards sont développés par la FIDO Alliance, soutenue par les plus grandes entreprises technologiques.
+          </p>
+        </div>
+
+        <div class="carte-veille apparition">
+          <div class="entete-carte-veille">
+            <div class="icone-carte-veille"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <h3>Avantages des passKeys</h3>
+            </div>
+          </div>
+          <p>
+              Les piliers de la révolution sans mot de passe sont :<br>
+
+            Sécurité renforcée : résistance au phishing, au brute force et aux fuites de bases de données<br>
+            Simplicité d’utilisation : plus besoin de mémoriser des mots de passe complexes<br>
+            Rapidité : authentification quasi instantanée<br>
+            Expérience utilisateur améliorée : biométrie et validation local<br>
+          </p>
+        </div>
+
+        <div class="carte-veille apparition">
+          <div class="entete-carte-veille">
+            <div class="icone-carte-veille"><i class="fas fa-code"></i></div>
+            <div>
+              <span class="date-carte"><i class="fas fa-calendar-alt"></i> Décembre 2024</span>
+              <h3>Automatisation des tests avec l'IA</h3>
+            </div>
+          </div>
+          <p>Des outils comme Testim, Mabl ou des assistants IA permettent de générer automatiquement des cas de tests unitaires et fonctionnels. Cette évolution réduit le temps consacré aux tests de régression et améliore la couverture du code.</p>
+        </div>
+
+        <div class="carte-veille apparition">
+          <div class="entete-carte-veille">
+            <div class="icone-carte-veille"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h3>Limites et Inconvénients</h3>
+            </div>
+          </div>
+            <p>Les freins actuels au déploiement total de cette technologie sont :<br>
+                Dépendance à l’appareil : perte ou panne du téléphone peut compliquer l’accès<br>
+                Compatibilité : tous les services ne supportent pas encore les passkeys<br>
+                Compréhension utilisateur : technologie encore mal connue du grand public
+            </p>
+        </div>
+
+        <div class="carte-veille apparition">
+          <div class="entete-carte-veille">
+            <div class="icone-carte-veille"><i class="fas fa-cloud"></i></div>
+            <div>
+              <h3>Cas d’utilisation concrets</h3>
+            </div>
+          </div>
+            <p>Les cas d'usage concrets qui illustrent déjà cette transition sont :<br>
+            Connexion à un compte Google ou Microsoft<br>
+            Authentification sur des sites web sans mot de passe<br>
+            Applications bancaires et services sensibles<br>
+            Remplacement progressif du mot de passe + 2FA<br>
+            </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIED DE PAGE -->
+  <footer class="pied-page">
+    <div class="conteneur">
+      <div class="interieur-pied-page">
+        <span>© 2025 Earvin KABOUBI — Portfolio BTS SIO SLAM</span>
+        <div class="liens-pied-page">
+          <a href="accueil.html">Accueil</a>
+          <a href="veille.html">Veille</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

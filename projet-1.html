@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet 1ère Année – Réalisations | Portfolio Earvin KABOUBI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- BARRE DE NAVIGATION -->
+  <nav class="barre-navig defilee" id="barre-navig">
+    <div class="conteneur-navig">
+      <a href="accueil.html" class="logo-navig">Mon<span>Portfolio</span></a>
+      <button class="menu-burger" id="menu-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu-navig" id="menu-navig">
+        <li><a href="accueil.html" class="lien-navig">Accueil</a></li>
+        <li><a href="accueil.html#cv" class="lien-navig">CV</a></li>
+        <li class="menu-deroulant">
+          <a href="#" class="lien-navig bouton-deroulant actif">Réalisations <i class="fas fa-chevron-down"></i></a>
+          <ul class="sous-menu">
+            <li><a href="site-web.html">Site web</a></li>
+            <li><a href="projet-1.html" style="color:var(--accent)">Projet 1ère année</a></li>
+            <li><a href="projet-2.html">Projet 2ème année</a></li>
+          </ul>
+        </li>
+        <li><a href="veille.html" class="lien-navig">Veille Technologique</a></li>
+        <li><a href="contact.html" class="lien-navig">Me contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- BANNIÈRE DE PAGE -->
+  <div class="hero-page">
+    <div class="contenu-hero-page">
+      <span class="badge-hero-page"><i class="fas fa-laptop-code"></i> &nbsp;Réalisation</span>
+      <h1>Projet <span>1ère Année</span></h1>
+      <p>Application de gestion développée en première année de BTS SIO SLAM. Découverte du développement applicatif et des bases de données relationnelles.</p>
+      <div class="etiquettes-hero-page">
+        <span class="etiquette">Java</span>
+        <span class="etiquette">SQL</span>
+        <span class="etiquette">MySQL</span>
+      </div>
+    </div>
+    <div class="fil-ariane">
+      <a href="accueil.html">Accueil</a>
+      <i class="fas fa-chevron-right"></i>
+      <a href="accuil.html#realisations">Réalisations</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Projet 1ère Année</span>
+    </div>
+  </div>
+
+  <!-- CONTENU -->
+  <section class="contenu-page">
+    <div class="conteneur">
+
+      <div class="apercu-projet apparition">
+        <div class="bloc-description-projet">
+          <h2>Présentation du projet</h2>
+          <p>En première année de BTS SIO SLAM, j'ai développé une application de gestion en Java .Ce projet constitue mon premier développement applicatif complet dans le cadre de ma formation.</p>
+          <p>L'application permet la gestion d'un stock ou d'une liste d'éléments avec les opérations CRUD connectées à une base de données MySQL locale.</p>
+          <p>Ce projet m'a permis d'acquérir les bases du développement orienté objet en Java, la manipulation de bases de données via JDBC, et la création d'interfaces utilisateur avec Swing.</p>
+        </div>
+
+        <div class="meta-projet">
+          <div class="carte-meta">
+            <h4>Technologies</h4>
+            <div>
+              <span class="etiquette-meta">Java</span>
+              <span class="etiquette-meta">JDBC</span>
+              <span class="etiquette-meta">MySQL</span>
+            </div>
+          </div>
+          <div class="carte-meta">
+            <h4>Détails</h4>
+            <ul class="liste-meta">
+              <li><i class="fas fa-calendar"></i> Année 2024–2025</li>
+              <li><i class="fas fa-clock"></i> ~4 semaines</li>
+              <li><i class="fas fa-user"></i> Projet individuel</li>
+              <li><i class="fas fa-graduation-cap"></i> 1ère année BTS SIO</li>
+            </ul>
+          </div>
+          <div class="carte-meta">
+            <h4>Compétences mobilisées</h4>
+            <ul class="liste-meta">
+              <li><i class="fas fa-check"></i> Programmation Java OOP</li>
+              <li><i class="fas fa-check"></i> Connexion JDBC/MySQL</li>
+              <li><i class="fas fa-check"></i> Modélisation UML</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Étapes -->
+      <h2 class="titre-section apparition">Étapes du projet</h2>
+      <div class="etapes-processus">
+        <div class="carte-etape apparition">
+          <div class="numero-etape">1</div>
+          <h4>Modélisation</h4>
+          <p>Réalisation du diagramme de classes UML et conception du schéma de la base de données relationnelle.</p>
+        </div>
+        <div class="carte-etape apparition">
+          <div class="numero-etape">2</div>
+          <h4>Base de données</h4>
+          <p>Création des tables MySQL, rédaction des requêtes SQL et configuration de la connexion JDBC.</p>
+        </div>
+        <div class="carte-etape apparition">
+          <div class="numero-etape">3</div>
+          <h4>Interface Java</h4>
+          <p>Développement de l'interface graphique, implémentation des formulaires et des tableaux de données.</p>
+        </div>
+      </div>
+
+
+      <!-- Bilan -->
+      <div class="bloc-description-projet apparition" style="margin-bottom: 40px;">
+        <h2>Bilan et apprentissages</h2>
+        <p>Ce premier projet a été une expérience fondatrice. J'ai appris à structurer un projet de développement, à travailler avec les principes de la programmation orientée objet et à interfacer une application avec une base de données.</p>
+        <p>Les difficultés rencontrées — notamment la gestion des exceptions JDBC et la mise en place de l'architecture MVC — m'ont permis de progresser rapidement et de mieux appréhender les projets plus complexes de deuxième année.</p>
+      </div>
+
+      <!-- Bloc action -->
+      <div class="bloc-action apparition">
+        <h3>Voir les autres projets</h3>
+        <p>Découvrez mes autres réalisations réalisées au cours de ma formation BTS SIO SLAM.</p>
+        <div class="groupe-boutons">
+          <a href="projet-2.html" class="bouton bouton-principal"><i class="fas fa-arrow-right"></i> Projet 2ème année</a>
+          <a href="site-web.html" class="bouton bouton-blanc"><i class="fas fa-globe"></i> Site Web</a>
+          <a href="contact.html" class="bouton" style="border:2px solid rgba(255,255,255,.3);color:#fff;"><i class="fas fa-paper-plane"></i> Me contacter</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIED DE PAGE -->
+  <footer class="pied-page">
+    <div class="conteneur">
+      <div class="interieur-pied-page">
+        <span>© 2025 Earvin KABOUBI — Portfolio BTS SIO SLAM</span>
+        <div class="liens-pied-page">
+          <a href="accueil.html">Accueil</a>
+          <a href="veille.html">Veille</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
